@@ -676,6 +676,7 @@
     height: 530px;
     border-radius: 3px;
     margin-bottom: 30px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
     &:hover{
         .release__links{            
             display: flex;
@@ -780,22 +781,130 @@
 
 }
 
-.More_Info {
-    font-size: 15px;
-    font-family: "Quicksand";
-    color: rgb(255, 255, 255);
-    line-height: 4.8;
-    text-align: center;
-    position: absolute;
-    left: 465.937px;
-    top: 2947.5px;
-    z-index: 581;
-  }
+
+
+.f-slider__item-tags.feed{
+    display: none;
+
+}
+
+.f-slider__item.feed{
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+    min-height: 530px;
+    margin-right: 0;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.f-slider__inner.feed>.slick-next,
+.f-slider__inner.feed>.slick-prev{
+    background-color:$blue;
+}
+
+
+
+
+.f-slider__item-image.feed{
+    width: 100%;
+    max-height: 230px;
+}
+
+.f-slider__item-box.feed{
+    padding: 31px 34px 15px 30px;
+    width: 100%;
+    height: 300px;
+}
+
+
+.f-slider__item-title.feed{
+    font-size: 20px;    
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: 700;
+}
+
+.f-slider__item-txt.feed{
+    max-height: 90px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 22px;
+}
+
+.item__rate{
+    display: flex;
+    border-top: none;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: -30px;
+        width: 360px;
+        height: 1px;
+        background-color: #d9dfe5;
+
+    }
+
+    &-price.feed{
+        background-color: #e6f1fd;
+        color: $blue;
+        font-size: 15px;
+        max-width: 78px;
+        overflow: hidden;
+        order: 1;
+    }
+    &-like.feed{
+        order: 2;
+    }
+    &-star.feed{
+        order: 3;
+        margin-left: 10px;
+    }
+    &-cart.feed{
+        order: 4;
+        margin-left: auto;
+    }
+}
+
   
 
 
 
-.jq-ry-container {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************
+**********************
+****PLUGINS STYLES****
+**********************
+*********************/
+
+
+
+
+
+
+  .jq-ry-container {
     position: relative;
     padding: 0 5px;
     line-height: 0;
@@ -833,10 +942,8 @@
     left: 0;
     overflow: hidden;
   }
-  
-  /* Slider */
 
-.slick-slider {
+  .slick-slider {
     position: relative;
     display: block;
     box-sizing: border-box;

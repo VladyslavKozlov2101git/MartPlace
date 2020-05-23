@@ -5,6 +5,7 @@ $(function(){
         ratedFill: "#ffa726",
         readOnly: true
     });
+    var mixer = mixitup('.release__items'); 
     
     $('.f-slider__inner.feed').slick({
         dots: false,
@@ -23,7 +24,7 @@ $(function(){
 
 
 
-    var mixer = mixitup('.release__items');  
+     
 
     
 });

@@ -870,12 +870,125 @@
     }
 }
 
-  
+.statistic{
+    background-color: #212225;
+}
+
+.statistic__inner{
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &-value{
+        font-size: 36px;
+        font-weight: 500;
+    }
+    &-txt{
+        color: #fff;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    &-img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 47px;
+    }
+}
 
 
 
 
+.choose__inner{
+    padding-top: 122px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.choose__title{
+    font-size: 36px;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    span{
+        color: $blue;
+    }
+}
+
+.choose__txt{
+    font-size: 16px;
+    color:rgb(85, 85, 85);
+    text-align: center;
+    line-height: 1.875;
+    font-weight: 500;
+    max-width: 680px;
+}
+
+.choose__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 55px;
+}
+
+.choose__item{
+    position: relative;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    max-width: 362px;
+    min-height: 372px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 3px;
+    padding: 55px 33px;
+    margin-bottom: 30px;
+
+    span{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 48px;
+        color: rgba(92, 135, 248, 0.2);
+        font-weight: 300;
+
+    }
+
+    &-title{
+        display: block;
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    &-txt{
+        font-size: 16px;
+        color: rgb(85, 85, 85);
+        line-height: 1.875;
+        text-align: center;
+        margin-top: 30px;
+        max-height: 110px;
+        overflow: hidden;
+
+    }
+    &-img{
+        width: 70px;
+        height: 70px;
+    }
+
+}
 
 
 

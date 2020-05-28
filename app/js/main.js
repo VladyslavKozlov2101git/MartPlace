@@ -1,4 +1,8 @@
 $(function(){
+    $('.services__alarm').on('click', function(){
+        $(this).children('.alarm__list').toggleClass('active');
+    });
+
     $(".rate__star").rateYo({
         rating: 4,
         starWidth: "12px",
@@ -21,7 +25,7 @@ $(function(){
         slidesToScroll: 1,
     });
     
-
+    
 
 
      
@@ -29,7 +33,3 @@ $(function(){
     
 });
 
-$('.products__btn').on('click', function(){
-    $(this).toggleClass('btn_active');
-
-});

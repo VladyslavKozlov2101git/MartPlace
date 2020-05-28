@@ -47,3 +47,78 @@
      content: "\f1a0";
    }
    
+   @font-face {
+    font-family: 'Linearicons-Free';
+    src:url('../fonts/Linearicons-Free.eot?w118d');
+    src:url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+      url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+      url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+      url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+      url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .lnr {
+    font-family: 'Linearicons-Free';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .lnr-user:before {
+    content: "\e82a";
+  }
+
+  .lnr-home:before {
+    content: "\e800";
+  }
+  .lnr-cog:before {
+    content: "\e810";
+  }
+
+  .lnr-cart:before {
+    content: "\e82e";
+  }
+
+  .lnr-heart:before {
+    content: "\e813";
+  }
+  .lnr-dice:before {
+    content: "\e812";
+  }
+
+  .lnr-chart-bars:before {
+    content: "\e843";
+  }
+
+  .lnr-upload:before {
+    content: "\e866";
+  }
+
+  .lnr-book:before {
+    content: "\e828";
+  }
+
+  .lnr-briefcase:before {
+    content: "\e84c";
+  }
+
+  .lnr-exit:before {
+    content: "\e820";
+  }
+
+  .lnr-bubble:before {
+    content: "\e83f";
+  }
+
+  .lnr-star:before {
+    content: "\e814";
+  }

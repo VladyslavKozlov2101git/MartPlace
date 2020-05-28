@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MartPlace</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="сss/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -20,6 +20,106 @@
                     <div class="header__services">
                         <a class="header__services-btn"  href="#">Become a Seller</a>
                         <div class="header__services-box">
+                            <div class="services__alarm">
+                                <span class="quantity">8</span>
+                                <a href="#">
+                                    <img src="images/icons/alarm.png" alt="icon">
+                                </a>
+                                <div class="alarm__list">
+                                    <div class="alarm__list-title">
+                                        My Notifications
+                                        <a href="#">View All</a>
+                                    </div>
+                                    <div class="alarm__item">
+                                        <a href="#">
+                                            <img class="alarm__item-avatar" src="images/user.jpg" alt="user">
+                                        </a>
+                                        <div class="alarm__item-box">
+                                            <a class="alarm__item-name" href="#">
+                                                Anderson
+                                                <span class="alarm-status"> added to Favourite</span>
+                                            </a>
+                                            <a class="alarm__item-theme" href="#">
+                                                Marketify Coffee Shop
+                                            </a>
+                                            <div class="alarm__item-update">
+                                                Just now
+                                            </div>
+                                        </div>
+                                        <div class="alarm__item-status alarm-favourite lnr-heart"></div>   
+                                    </div>
+                                    <div class="alarm__item">
+                                        <a href="#">
+                                            <img class="alarm__item-avatar" src="images/user.jpg" alt="user">
+                                        </a>
+                                        <div class="alarm__item-box">
+                                            <a class="alarm__item-name" href="#">
+                                                Anderson
+                                                <span class="alarm-status">commented</span>
+                                            </a>
+                                            <a class="alarm__item-theme" href="#">
+                                                Marketify Coffee Shop
+                                            </a>
+                                            <div class="alarm__item-update">
+                                                Just now
+                                            </div>
+                                        </div>
+                                        <div class="alarm__item-status alarm-commented lnr-bubble"></div>   
+                                    </div>
+
+                                    <div class="alarm__item">
+                                        <a href="#">
+                                            <img class="alarm__item-avatar" src="images/user.jpg" alt="user">
+                                        </a>
+                                        <div class="alarm__item-box">
+                                            <a class="alarm__item-name" href="#">
+                                                Anderson
+                                                <span class="alarm-status">purchased</span>
+                                            </a>
+                                            <a class="alarm__item-theme" href="#">
+                                                Marketify Coffee Shop
+                                            </a>
+                                            <div class="alarm__item-update">
+                                                2 days ago
+                                            </div>
+                                        </div>
+                                        <div class="alarm__item-status alarm-purchased lnr-cart"></div>   
+                                    </div>
+
+
+                                    <div class="alarm__item">
+                                        <a href="#">
+                                            <img class="alarm__item-avatar" src="images/user.jpg" alt="user">
+                                        </a>
+                                        <div class="alarm__item-box">
+                                            <a class="alarm__item-name" href="#">
+                                                Anderson
+                                                <span class="alarm-status"> wrote a review on</span>
+                                            </a>
+                                            <a class="alarm__item-theme" href="#">
+                                                Marketify Coffee Shop
+                                            </a>
+                                            <div class="alarm__item-update">
+                                                5 days ago
+                                            </div>
+                                        </div>
+                                        <div class="alarm__item-status alarm-review lnr-star"></div>   
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="services__post">
+                                <span class="quantity">5</span>
+                                <a href="#">
+                                    <img src="images/icons/post.png" alt="icon">
+                                </a>
+                            </div>
+                            <div class="services__cart">
+                                <span class="quantity">7</span>
+                                <a href="#">
+                                    <img src="images/icons/cart-shop.png" alt="icon">
+                                </a>
+                            </div>
                             
                         </div>
                         <div class="header__services-user">
@@ -34,7 +134,28 @@
                                 <a class="header__services-user-price" href="#">
                                     $20.45
                                 </a>
-                            </div>                        
+                            </div>
+                            <ul class="user__list">
+                                <li><a class="lnr-user" href="#">Profile Page</a></li>
+                                <li><a class="lnr-home" href="#">Dashboard</a></li>
+                                <li><a class="lnr-cog" href="#">Account Settings</a></li>
+                                <li><a class="lnr-cart" href="#">Your Purchases</a></li>
+                                <li><a class="lnr-heart" href="#">Your Favorites</a></li>
+                                <li><a class="lnr-dice" href="#">Add Credits</a></li>
+                                <li><a class="lnr-chart-bars" href="#">Sales Statements</a></li>
+                                <li><a class="lnr-upload" href="#">Upload Item</a></li>
+                                <li><a class="lnr-book" href="#">Edit Item</a></li>
+                                <li><a class="lnr-briefcase" href="#">Withdrawals</a></li>
+                                <li><a class="lnr-exit" href="#">Logout</a></li>
+                            </ul>
+                            
+
+
+
+
+
+
+                        
                         </div>
                     </div>
                 </div>                              
@@ -81,6 +202,9 @@
                 <div class="navigation__form">
                     <form>  
                         <input type="text" placeholder="Search product here...">
+                        
+                                             
+                        
                         <button type="submit">
                             <img src="images/icons/search.png" alt="search">
                         </button>
@@ -118,6 +242,11 @@
                 <div class="features__search">
                     <form>  
                         <input type="text" placeholder="Search your products...">
+                        <select>
+                            <option value="regular">All Categories</option>
+                            <option value="premium">New Categories</option>
+                            <option value="premium">Recently Updated</option>
+                        </select>  
                         <button type="submit">
                             Search Now
                         </button>
@@ -295,9 +424,14 @@
     </section>
 
     <section class="release">
-        <div class="container">
+        <div class="container">        
             <div class="release__title">
                 Newest Release Products
+                <form>
+                    <button type="submit">
+                        Filter by:
+                    </button>
+                </form>
             </div>
             <div class="release__filter">
                 
@@ -322,51 +456,7 @@
                         <a href="#">Live Demo</a>
                     </div>
                     <div class="release__item-box">
-                        <a class="release__item-title" href="#">
-                            One Page Resume Template
-                        </a>
-
-                        
-
-                        <div class="release__panel">
-                            <img class="release__panel-avatar" src="images/user.jpg" alt="author" >
-                            <a class="release__panel-name" href="#">AazzTech</a>
-                            <a class="release__panel-category" href="#" >
-                                <img src="images/icons/PSD.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="release__item-txt">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                        </div>
-
-                                                
-                        <div class="item__rate item__rate--smaller">
-                            <a class="item__rate-price item__rate-price--blue " href="#">
-                                $10
-                            </a>
-                            <a  class="item__rate-like" href="#">
-                                49
-                            </a>
-                            <a  class="item__rate-star item__rate-star--center" href="#">
-                                <div class="rate__star"></div>
-                            </a>
-                            <a  class="item__rate-cart item__rate-cart--corner" href="#">
-                                634
-                            </a>                            
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="release__items">
-                    <div class="release__item mix category-software" data-order="2">
-                        <div class="release__item-image" style="background-image: url(images/content/product-item4.jpg);">
-    
-                        </div>
-                        <div class="release__links">
-                            <a href="#">More Info</a>
-                            <a href="#">Live Demo</a>
-                        </div>
-                        <div class="release__item-box">
+                        <header>
                             <a class="release__item-title" href="#">
                                 One Page Resume Template
                             </a>
@@ -377,14 +467,16 @@
                                     <img src="images/icons/PSD.png" alt="img">
                                 </a>
                             </div>
-                            <div class="release__item-txt">
+                            <p class="release__item-txt">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            </div>
-    
-                                                    
+                                
+                            </p>
+                        </header>
+
+                        <footer>
                             <div class="item__rate item__rate--smaller">
                                 <a class="item__rate-price item__rate-price--blue " href="#">
-                                    $10
+                                    $71
                                 </a>
                                 <a  class="item__rate-like" href="#">
                                     49
@@ -396,9 +488,56 @@
                                     634
                                 </a>                            
                             </div>
-                        </div>
+                        </footer>
+                    </div>
+                </div> 
+
+                <div class="release__item mix category-software" data-order="2">
+                    <div class="release__item-image" style="background-image: url(images/content/product-item4.jpg);">
+
+                    </div>
+                    <div class="release__links">
+                        <a href="#">More Info</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                    <div class="release__item-box">
+                        <header>
+                            <a class="release__item-title" href="#">
+                                One Page Resume Template
+                            </a>
+                            <div class="release__panel">
+                                <img class="release__panel-avatar" src="images/user.jpg" alt="author" >
+                                <a class="release__panel-name" href="#">AazzTech</a>
+                                <a class="release__panel-category" href="#" >
+                                    <img src="images/icons/PSD.png" alt="img">
+                                </a>
+                            </div>
+                            <p class="release__item-txt">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                
+                            </p>
+                        </header>
+
+                        <footer>
+                            <div class="item__rate item__rate--smaller">
+                                <a class="item__rate-price item__rate-price--blue " href="#">
+                                    $72
+                                </a>
+                                <a  class="item__rate-like" href="#">
+                                    49
+                                </a>
+                                <a  class="item__rate-star item__rate-star--center" href="#">
+                                    <div class="rate__star"></div>
+                                </a>
+                                <a  class="item__rate-cart item__rate-cart--corner" href="#">
+                                    634
+                                </a>                            
+                            </div>
+                        </footer>                          
                     </div>
                 </div>
+
+                
                 <div class="release__item mix category-wordpress" data-order="3">
                     <div class="release__item-image" style="background-image: url(images/content/product-item2.jpg);">
 
@@ -408,51 +547,7 @@
                         <a href="#">Live Demo</a>
                     </div>
                     <div class="release__item-box">
-                        <a class="release__item-title" href="#">
-                            One Page Resume Template
-                        </a>
-
-                        
-
-                        <div class="release__panel">
-                            <img class="release__panel-avatar" src="images/user.jpg" alt="author" >
-                            <a class="release__panel-name" href="#">AazzTech</a>
-                            <a class="release__panel-category" href="#" >
-                                <img src="images/icons/PSD.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="release__item-txt">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                        </div>
-
-                                                
-                        <div class="item__rate item__rate--smaller">
-                            <a class="item__rate-price item__rate-price--blue " href="#">
-                                $10
-                            </a>
-                            <a  class="item__rate-like" href="#">
-                                49
-                            </a>
-                            <a  class="item__rate-star item__rate-star--center" href="#">
-                                <div class="rate__star"></div>
-                            </a>
-                            <a  class="item__rate-cart item__rate-cart--corner" href="#">
-                                634
-                            </a>                            
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="release__items">
-                    <div class="release__item mix category-software" data-order="4">
-                        <div class="release__item-image" style="background-image: url(images/content/product-item4.jpg);">
-    
-                        </div>
-                        <div class="release__links">
-                            <a href="#">More Info</a>
-                            <a href="#">Live Demo</a>
-                        </div>
-                        <div class="release__item-box">
+                        <header>
                             <a class="release__item-title" href="#">
                                 One Page Resume Template
                             </a>
@@ -463,14 +558,16 @@
                                     <img src="images/icons/PSD.png" alt="img">
                                 </a>
                             </div>
-                            <div class="release__item-txt">
+                            <p class="release__item-txt">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            </div>
-    
-                                                    
+                                
+                            </p>
+                        </header>
+
+                        <footer>
                             <div class="item__rate item__rate--smaller">
                                 <a class="item__rate-price item__rate-price--blue " href="#">
-                                    $10
+                                    $73
                                 </a>
                                 <a  class="item__rate-like" href="#">
                                     49
@@ -482,11 +579,11 @@
                                     634
                                 </a>                            
                             </div>
-                        </div>
+                        </footer>
                     </div>
                 </div>
-                <div class="release__item mix category-wordpress" data-order="5">
-                    <div class="release__item-image" style="background-image: url(images/content/product-item3.jpg);">
+                <div class="release__item mix category-joomla" data-order="4">
+                    <div class="release__item-image" style="background-image: url(images/content/product-item4.jpg);">
 
                     </div>
                     <div class="release__links">
@@ -494,51 +591,7 @@
                         <a href="#">Live Demo</a>
                     </div>
                     <div class="release__item-box">
-                        <a class="release__item-title" href="#">
-                            One Page Resume Template
-                        </a>
-
-                        
-
-                        <div class="release__panel">
-                            <img class="release__panel-avatar" src="images/user.jpg" alt="author" >
-                            <a class="release__panel-name" href="#">AazzTech</a>
-                            <a class="release__panel-category" href="#" >
-                                <img src="images/icons/PSD.png" alt="img">
-                            </a>
-                        </div>
-                        <div class="release__item-txt">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                        </div>
-
-                                                
-                        <div class="item__rate item__rate--smaller">
-                            <a class="item__rate-price item__rate-price--blue " href="#">
-                                $10
-                            </a>
-                            <a  class="item__rate-like" href="#">
-                                49
-                            </a>
-                            <a  class="item__rate-star item__rate-star--center" href="#">
-                                <div class="rate__star"></div>
-                            </a>
-                            <a  class="item__rate-cart item__rate-cart--corner" href="#">
-                                634
-                            </a>                            
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="release__items">
-                    <div class="release__item mix category-ui" data-order="6">
-                        <div class="release__item-image" style="background-image: url(images/content/product-item4.jpg);">
-    
-                        </div>
-                        <div class="release__links">
-                            <a href="#">More Info</a>
-                            <a href="#">Live Demo</a>
-                        </div>
-                        <div class="release__item-box">
+                        <header>
                             <a class="release__item-title" href="#">
                                 One Page Resume Template
                             </a>
@@ -549,14 +602,16 @@
                                     <img src="images/icons/PSD.png" alt="img">
                                 </a>
                             </div>
-                            <div class="release__item-txt">
+                            <p class="release__item-txt">
                                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            </div>
-    
-                                                    
+                                
+                            </p>
+                        </header>
+
+                        <footer>
                             <div class="item__rate item__rate--smaller">
                                 <a class="item__rate-price item__rate-price--blue " href="#">
-                                    $100-150
+                                    $73
                                 </a>
                                 <a  class="item__rate-like" href="#">
                                     49
@@ -568,10 +623,97 @@
                                     634
                                 </a>                            
                             </div>
-                        </div>
+                        </footer>
                     </div>
-                </div> 
+                </div>
+                <div class="release__item mix category-wordpress" data-order="5">
+                    <div class="release__item-image" style="background-image: url(images/content/product-item4.jpg);">
 
+                    </div>
+                    <div class="release__links">
+                        <a href="#">More Info</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                    <div class="release__item-box">
+                        <header>
+                            <a class="release__item-title" href="#">
+                                One Page Resume Template
+                            </a>
+                            <div class="release__panel">
+                                <img class="release__panel-avatar" src="images/user.jpg" alt="author" >
+                                <a class="release__panel-name" href="#">AazzTech</a>
+                                <a class="release__panel-category" href="#" >
+                                    <img src="images/icons/PSD.png" alt="img">
+                                </a>
+                            </div>
+                            <p class="release__item-txt">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                
+                            </p>
+                        </header>
+
+                        <footer>
+                            <div class="item__rate item__rate--smaller">
+                                <a class="item__rate-price item__rate-price--blue " href="#">
+                                    $73
+                                </a>
+                                <a  class="item__rate-like" href="#">
+                                    49
+                                </a>
+                                <a  class="item__rate-star item__rate-star--center" href="#">
+                                    <div class="rate__star"></div>
+                                </a>
+                                <a  class="item__rate-cart item__rate-cart--corner" href="#">
+                                    634
+                                </a>                            
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                <div class="release__item mix category-joomla" data-order="6">
+                    <div class="release__item-image" style="background-image: url(images/content/product-item2.jpg);">
+
+                    </div>
+                    <div class="release__links">
+                        <a href="#">More Info</a>
+                        <a href="#">Live Demo</a>
+                    </div>
+                    <div class="release__item-box">
+                        <header>
+                            <a class="release__item-title" href="#">
+                                One Page Resume Template
+                            </a>
+                            <div class="release__panel">
+                                <img class="release__panel-avatar" src="images/user.jpg" alt="author" >
+                                <a class="release__panel-name" href="#">AazzTech</a>
+                                <a class="release__panel-category" href="#" >
+                                    <img src="images/icons/PSD.png" alt="img">
+                                </a>
+                            </div>
+                            <p class="release__item-txt">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                
+                            </p>
+                        </header>
+
+                        <footer>
+                            <div class="item__rate item__rate--smaller">
+                                <a class="item__rate-price item__rate-price--blue " href="#">
+                                    $73
+                                </a>
+                                <a  class="item__rate-like" href="#">
+                                    49
+                                </a>
+                                <a  class="item__rate-star item__rate-star--center" href="#">
+                                    <div class="rate__star"></div>
+                                </a>
+                                <a  class="item__rate-cart item__rate-cart--corner" href="#">
+                                    634
+                                </a>                            
+                            </div>
+                        </footer>
+                    </div>
+                </div>    
             </div>
             <button class="release__btn" type="button" data-filter="all">All New Products</button>
         </div>
@@ -584,55 +726,56 @@
             </div>
             <div class="f-slider__inner feed">
 
-
-
-
                 <div class="f-slider__item feed">
                     <div class="f-slider__item-image feed" style="background-image: url(images/content/product-item2.jpg);">
 
                     </div>
                     <div class="f-slider__item-box feed">
-                        <a class="f-slider__item-title feed" href="#">
-                            One Page Resume Template
-                        </a>
-                        <div class="item__panel">
-                            <img class="item__panel-avatar" src="images/user.jpg" alt="author" >
-                            <a class="item__panel-author" href="#">AazzTech</a>
-                            <a class="item__panel-category" href="#" >
-                                <img src="images/icons/PSD.png" alt="img">
+                        <header>
+                            <a class="f-slider__item-title feed" href="#">
+                                One Page Resume Template
                             </a>
-                        </div>
-                        <div class="f-slider__item-txt feed">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
-
-                        </div>
-
-                        <div class="f-slider__item-tags feed">
-                            <a href="#">website</a>
-                            <a href="#">plugins</a>
-                            <a href="#">landing page</a>
-                            <a href="#">website</a>
-                            <a href="#">plugins</a>
-                            <a href="#">landing page</a>
-                            <a href="#">website</a>
-                        </div>
-                        
-                        <div class="item__rate">
-                            <a class="item__rate-price feed" href="#">
-                                $10
-                            </a>
-                            <a  class="item__rate-like feed" href="#">
-                                49
-                            </a>
-                            <a  class="item__rate-cart feed" href="#">
-                                634
-                            </a>
-                            <a  class="item__rate-star feed" href="#">
-                                <div class="rate__star"></div>
-                            </a>
-                        </div>
+                            <div class="item__panel">
+                                <img class="item__panel-avatar" src="images/user.jpg" alt="author" >
+                                <a class="item__panel-author" href="#">AazzTech</a>
+                                <a class="item__panel-category" href="#" >
+                                    <img src="images/icons/PSD.png" alt="img">
+                                </a>
+                            </div>
+                            <div class="f-slider__item-txt feed">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
+    
+                            </div>
+    
+                            <div class="f-slider__item-tags feed">
+                                <a href="#">website</a>
+                                <a href="#">plugins</a>
+                                <a href="#">landing page</a>
+                                <a href="#">website</a>
+                                <a href="#">plugins</a>
+                                <a href="#">landing page</a>
+                                <a href="#">website</a>
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="item__rate">
+                                <a class="item__rate-price feed" href="#">
+                                    $80
+                                </a>
+                                <a  class="item__rate-like feed" href="#">
+                                    50
+                                </a>
+                                <a  class="item__rate-cart feed" href="#">
+                                    700
+                                </a>
+                                <a  class="item__rate-star feed" href="#">
+                                    <div class="rate__star"></div>
+                                </a>
+                            </div>
+                        </footer>                     
+     
                     </div>
                 </div>
                 
@@ -643,47 +786,51 @@
 
                     </div>
                     <div class="f-slider__item-box feed">
-                        <a class="f-slider__item-title feed" href="#">
-                            One Page Resume Template
-                        </a>
-                        <div class="item__panel">
-                            <img class="item__panel-avatar" src="images/user.jpg" alt="author" >
-                            <a class="item__panel-author" href="#">AazzTech</a>
-                            <a class="item__panel-category" href="#" >
-                                <img src="images/icons/PSD.png" alt="img">
+                        <header>
+                            <a class="f-slider__item-title feed" href="#">
+                                One Page Resume Template
                             </a>
-                        </div>
-                        <div class="f-slider__item-txt feed">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
-
-                        </div>
-
-                        <div class="f-slider__item-tags feed">
-                            <a href="#">website</a>
-                            <a href="#">plugins</a>
-                            <a href="#">landing page</a>
-                            <a href="#">website</a>
-                            <a href="#">plugins</a>
-                            <a href="#">landing page</a>
-                            <a href="#">website</a>
-                        </div>
-                        
-                        <div class="item__rate">
-                            <a class="item__rate-price feed" href="#">
-                                $10
-                            </a>
-                            <a  class="item__rate-like feed" href="#">
-                                49
-                            </a>
-                            <a  class="item__rate-cart feed" href="#">
-                                634
-                            </a>
-                            <a  class="item__rate-star feed" href="#">
-                                <div class="rate__star"></div>
-                            </a>
-                        </div>
+                            <div class="item__panel">
+                                <img class="item__panel-avatar" src="images/user.jpg" alt="author" >
+                                <a class="item__panel-author" href="#">AazzTech</a>
+                                <a class="item__panel-category" href="#" >
+                                    <img src="images/icons/PSD.png" alt="img">
+                                </a>
+                            </div>
+                            <div class="f-slider__item-txt feed">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
+    
+                            </div>
+    
+                            <div class="f-slider__item-tags feed">
+                                <a href="#">website</a>
+                                <a href="#">plugins</a>
+                                <a href="#">landing page</a>
+                                <a href="#">website</a>
+                                <a href="#">plugins</a>
+                                <a href="#">landing page</a>
+                                <a href="#">website</a>
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="item__rate">
+                                <a class="item__rate-price feed" href="#">
+                                    $70
+                                </a>
+                                <a  class="item__rate-like feed" href="#">
+                                    50
+                                </a>
+                                <a  class="item__rate-cart feed" href="#">
+                                    700
+                                </a>
+                                <a  class="item__rate-star feed" href="#">
+                                    <div class="rate__star"></div>
+                                </a>
+                            </div>
+                        </footer>                     
+     
                     </div>
                 </div>
                 
@@ -693,47 +840,51 @@
 
                     </div>
                     <div class="f-slider__item-box feed">
-                        <a class="f-slider__item-title feed" href="#">
-                            One Page Resume Template
-                        </a>
-                        <div class="item__panel">
-                            <img class="item__panel-avatar" src="images/user.jpg" alt="author" >
-                            <a class="item__panel-author" href="#">AazzTech</a>
-                            <a class="item__panel-category" href="#" >
-                                <img src="images/icons/PSD.png" alt="img">
+                        <header>
+                            <a class="f-slider__item-title feed" href="#">
+                                One Page Resume Template
                             </a>
-                        </div>
-                        <div class="f-slider__item-txt feed">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
-
-                        </div>
-
-                        <div class="f-slider__item-tags feed">
-                            <a href="#">website</a>
-                            <a href="#">plugins</a>
-                            <a href="#">landing page</a>
-                            <a href="#">website</a>
-                            <a href="#">plugins</a>
-                            <a href="#">landing page</a>
-                            <a href="#">website</a>
-                        </div>
-                        
-                        <div class="item__rate">
-                            <a class="item__rate-price feed" href="#">
-                                $10
-                            </a>
-                            <a  class="item__rate-like feed" href="#">
-                                49
-                            </a>
-                            <a  class="item__rate-cart feed" href="#">
-                                634
-                            </a>
-                            <a  class="item__rate-star feed" href="#">
-                                <div class="rate__star"></div>
-                            </a>
-                        </div>
+                            <div class="item__panel">
+                                <img class="item__panel-avatar" src="images/user.jpg" alt="author" >
+                                <a class="item__panel-author" href="#">AazzTech</a>
+                                <a class="item__panel-category" href="#" >
+                                    <img src="images/icons/PSD.png" alt="img">
+                                </a>
+                            </div>
+                            <div class="f-slider__item-txt feed">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
+    
+                            </div>
+    
+                            <div class="f-slider__item-tags feed">
+                                <a href="#">website</a>
+                                <a href="#">plugins</a>
+                                <a href="#">landing page</a>
+                                <a href="#">website</a>
+                                <a href="#">plugins</a>
+                                <a href="#">landing page</a>
+                                <a href="#">website</a>
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="item__rate">
+                                <a class="item__rate-price feed" href="#">
+                                    $70
+                                </a>
+                                <a  class="item__rate-like feed" href="#">
+                                    50
+                                </a>
+                                <a  class="item__rate-cart feed" href="#">
+                                    700
+                                </a>
+                                <a  class="item__rate-star feed" href="#">
+                                    <div class="rate__star"></div>
+                                </a>
+                            </div>
+                        </footer>                     
+     
                     </div>
                 </div>
 
@@ -742,47 +893,51 @@
 
                     </div>
                     <div class="f-slider__item-box feed">
-                        <a class="f-slider__item-title feed" href="#">
-                            One Page Resume Template
-                        </a>
-                        <div class="item__panel">
-                            <img class="item__panel-avatar" src="images/user.jpg" alt="author" >
-                            <a class="item__panel-author" href="#">AazzTech</a>
-                            <a class="item__panel-category" href="#" >
-                                <img src="images/icons/PSD.png" alt="img">
+                        <header>
+                            <a class="f-slider__item-title feed" href="#">
+                                One Page Resume Template
                             </a>
-                        </div>
-                        <div class="f-slider__item-txt feed">
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
-                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
-
-                        </div>
-
-                        <div class="f-slider__item-tags feed">
-                            <a href="#">website</a>
-                            <a href="#">plugins</a>
-                            <a href="#">landing page</a>
-                            <a href="#">website</a>
-                            <a href="#">plugins</a>
-                            <a href="#">landing page</a>
-                            <a href="#">website</a>
-                        </div>
-                        
-                        <div class="item__rate">
-                            <a class="item__rate-price feed" href="#">
-                                $10
-                            </a>
-                            <a  class="item__rate-like feed" href="#">
-                                49
-                            </a>
-                            <a  class="item__rate-cart feed" href="#">
-                                634
-                            </a>
-                            <a  class="item__rate-star feed" href="#">
-                                <div class="rate__star"></div>
-                            </a>
-                        </div>
+                            <div class="item__panel">
+                                <img class="item__panel-avatar" src="images/user.jpg" alt="author" >
+                                <a class="item__panel-author" href="#">AazzTech</a>
+                                <a class="item__panel-category" href="#" >
+                                    <img src="images/icons/PSD.png" alt="img">
+                                </a>
+                            </div>
+                            <div class="f-slider__item-txt feed">
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut scelerisque.
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
+                                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis
+    
+                            </div>
+    
+                            <div class="f-slider__item-tags feed">
+                                <a href="#">website</a>
+                                <a href="#">plugins</a>
+                                <a href="#">landing page</a>
+                                <a href="#">website</a>
+                                <a href="#">plugins</a>
+                                <a href="#">landing page</a>
+                                <a href="#">website</a>
+                            </div>
+                        </header>
+                        <footer>
+                            <div class="item__rate">
+                                <a class="item__rate-price feed" href="#">
+                                    $70
+                                </a>
+                                <a  class="item__rate-like feed" href="#">
+                                    50
+                                </a>
+                                <a  class="item__rate-cart feed" href="#">
+                                    700
+                                </a>
+                                <a  class="item__rate-star feed" href="#">
+                                    <div class="rate__star"></div>
+                                </a>
+                            </div>
+                        </footer>                     
+     
                     </div>
                 </div>
 

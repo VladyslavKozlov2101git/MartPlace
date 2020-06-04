@@ -2,6 +2,14 @@ $(function(){
     $('.services__alarm').on('click', function(){
         $(this).children('.alarm__list').toggleClass('active');
     });
+    $('.services__post').on('click', function(){
+        $(this).children('.post__list').toggleClass('active');
+    });
+
+    $('.services__cart').on('click', function(){
+        $(this).children('.cart__list').toggleClass('active');
+    });
+    
 
     $(".rate__star").rateYo({
         rating: 4,

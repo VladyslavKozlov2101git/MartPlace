@@ -9,6 +9,10 @@ $(function(){
     $('.services__cart').on('click', function(){
         $(this).children('.cart__list').toggleClass('active');
     });
+
+    $('.burger__menu').on('click', function(){
+        $('.navigation__menu').toggleClass('active');
+    });
     
 
     $(".rate__star").rateYo({

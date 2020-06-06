@@ -33,7 +33,9 @@
         margin-left: 8px;
     }
 }
-
+.smart-logo{
+    display: none;
+}
 
 .header__services{
     
@@ -628,6 +630,27 @@
 // ************************
 
 
+.burger__menu{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    div{
+        width: 30px;
+        height: 4px;
+        background-color: $blue;
+        &+div{
+            margin-top: 4px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 .navigation__inner{
     display: flex;
     flex-direction: row;
@@ -638,6 +661,7 @@
 
 .navigation__menu{
     position: relative;
+    transition: all 3s;
     ul{
         
         li{
@@ -668,7 +692,7 @@
         
         input{
             box-sizing: border-box;
-            height: 46px;
+            height: 45px;
             width: 360px;
             border-radius: 23px;
             border: 1px solid #d9dfe5;
@@ -712,6 +736,7 @@
     padding: 20px 30px;
     width: 1150px;
     border-top: 1px solid $blue;
+    z-index: 1;
 }
 
 
@@ -770,6 +795,7 @@
     &:hover{
         .menu-list{
             display: flex;
+            z-index: 1;
         }    
     }
 }
@@ -2479,3 +2505,15 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+@import 'media';

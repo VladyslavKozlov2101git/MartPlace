@@ -46,7 +46,10 @@
    .icon-google:before {
      content: "\f1a0";
    }
-   
+   .icon-th:before {
+    content: "\f00a";
+    }
+
    @font-face {
     font-family: 'Linearicons-Free';
     src:url('../fonts/Linearicons-Free.eot?w118d');
@@ -131,3 +134,27 @@
     content: "\e818";
   }
 
+  .lnr-list:before {
+    content: "\e872";
+  }
+
+  .lnr-menu:before {
+    content: "\e871";
+  }
+
+  .lnr-chevron-right:before {
+    content: "\e876";
+  }
+
+  .lnr-chevron-up:before {
+    content: "\e873";
+  }
+  .lnr-chevron-down:before {
+    content: "\e874";
+  }
+  .lnr-arrow-left:before {
+    content: "\e879";
+  }
+  .lnr-arrow-right:before {
+    content: "\e87a";
+  }

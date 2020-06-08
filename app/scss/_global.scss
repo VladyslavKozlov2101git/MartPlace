@@ -59,3 +59,35 @@ button{
 .footer {
 	flex: 0 0 auto;
 }
+
+.breadcrumbs{
+    &__inner{
+        padding: 35px 0 30px;
+        overflow: hidden;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            &+li{
+                padding-left: 24px;
+                &::before{
+                    content: '/';
+                    position: absolute;
+                    left: 8px;
+                    color: #bfcad7;
+                }
+            }
+        &:last-child{
+            a,
+            span{
+                color: #bfcad7;
+                font-size: 15px;
+            }
+        }
+    }
+        a{
+            color: #fff;
+        }              
+    }
+}

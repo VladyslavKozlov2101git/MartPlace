@@ -1,10 +1,17 @@
 $(function(){
+    
     $(".rate__star").rateYo({
         rating: 4,
         starWidth: "12px",
         ratedFill: "#ffa726",
-        readOnly: true
+        readOnly: true,
+        spacing: "3px",
     });
+
+    
+
+    
+
     $(".js-range-slider").ionRangeSlider({
         type: "double",
         skin: "round",
@@ -16,6 +23,7 @@ $(function(){
         grid: false,
         keyboard: true,
     });
+
     $('.services__alarm').on('click', function(){
         $(this).children('.alarm__list').toggleClass('active');
     });
@@ -41,15 +49,33 @@ $(function(){
         $('.filter__btn-new').removeClass('active');
     });
 
+
+
+
     $('.filter__btn-grid').on('click', function(){
-        $('.filter__btn-grid').toggleClass('active');
+        $('.filter__btn-grid').addClass('active');
         $('.filter__btn-list').removeClass('active');
+        $('.mock-up__items, .release__item, .release__item-image, .release__item-title, .release__item-box, .release__item-txt, .release__panel-category, .release__panel, .item__rate-star, .rate__star, .item__rate-cart, .item__rate-price').addClass('grid');
+
+        $('.mock-up__items, .release__item, .release__item-image, .release__item-title, .release__item-box, .release__item-txt, .release__panel-category, .release__panel, .item__rate-star, .rate__star, .item__rate-cart, .item__rate-price').removeClass('list');
     });
+    
 
     $('.filter__btn-list').on('click', function(){
-        $('.filter__btn-list').toggleClass('active');
         $('.filter__btn-grid').removeClass('active');
+        $('.filter__btn-list').addClass('active');
+        $('.mock-up__items, .release__item, .release__item-image, .release__item-title, .release__item-box, .release__item-txt, .release__panel-category, .release__panel, .item__rate-star, .rate__star, .item__rate-cart, .item__rate-price').removeClass('grid');
+
+        $('.mock-up__items, .release__item, .release__item-image, .release__item-title, .release__item-box, .release__item-txt, .release__panel-category, .release__panel, .item__rate-star, .rate__star, .item__rate-cart, .item__rate-price').addClass('list');
+
+        
     });
+
+
+
+
+
+
 
     $('.filter__btn-cat').on('click', function(){
         $('.filter__btn-cat, .categories__list, .filter__categories').toggleClass('active');
